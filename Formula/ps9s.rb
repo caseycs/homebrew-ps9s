@@ -5,21 +5,21 @@
 class Ps9s < Formula
   desc "AWS Parameter Store TUI"
   homepage "https://github.com/caseycs/ps9s"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.2/ps9s_0.1.2_darwin_amd64.tar.gz"
-      sha256 "438a5ba1fa72dceecc791094c9f3ff8fb85615e601f6f794234f7ceb5156eeb8"
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_darwin_amd64.tar.gz"
+      sha256 "454f1eb9f63cc978d6faa665da2fbbf8aefb7d91fa1cdb0ca8ab8e916cc33abc"
 
       def install
         bin.install "ps9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.2/ps9s_0.1.2_darwin_arm64.tar.gz"
-      sha256 "1cf34f6deacb7daa9aa652ebc0a61dee8c8b4f153c9bac4888d0bf2c7cf7be3e"
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_darwin_arm64.tar.gz"
+      sha256 "bee97e8d13e27ea0c095852a624a7f496a44c618de471a6b5a1688444720331b"
 
       def install
         bin.install "ps9s"
@@ -29,15 +29,15 @@ class Ps9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.2/ps9s_0.1.2_linux_amd64.tar.gz"
-      sha256 "1c2bf76b81b4369f69dab0d5a28f383c1221d1035f65d392260bce059476c037"
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_linux_amd64.tar.gz"
+      sha256 "d660305c5a0ffd768b756dc56998f08d9d096f83b83cbdccda56eb77b6cdc1c4"
       def install
         bin.install "ps9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.2/ps9s_0.1.2_linux_arm64.tar.gz"
-      sha256 "38840ea9df3d6d1d8af03d7472b69e7e54d8117c7e78c4317ace9ad3a750d35c"
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_linux_arm64.tar.gz"
+      sha256 "5cad16d18f351bf218f22cac1c245abf8afcfa90dff234928d1722bf66a429ff"
       def install
         bin.install "ps9s"
       end
