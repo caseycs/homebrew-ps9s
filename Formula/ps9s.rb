@@ -5,23 +5,23 @@
 class Ps9s < Formula
   desc "AWS Parameter Store TUI"
   homepage "https://github.com/caseycs/ps9s"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_darwin_amd64.tar.gz"
-      sha256 "454f1eb9f63cc978d6faa665da2fbbf8aefb7d91fa1cdb0ca8ab8e916cc33abc"
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.4/ps9s_0.1.4_darwin_amd64.tar.gz"
+      sha256 "e628c1f7d84c04c3dddfe1430a43adfbce47d820e6c3ff94777afaebf329e3cf"
 
-      def install
+      define_method(:install) do
         bin.install "ps9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_darwin_arm64.tar.gz"
-      sha256 "bee97e8d13e27ea0c095852a624a7f496a44c618de471a6b5a1688444720331b"
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.4/ps9s_0.1.4_darwin_arm64.tar.gz"
+      sha256 "794d90c10df49a7b916a49822777fa2a40a35b4dd67502a2e0d6cf302416f006"
 
-      def install
+      define_method(:install) do
         bin.install "ps9s"
       end
     end
@@ -29,16 +29,16 @@ class Ps9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_linux_amd64.tar.gz"
-      sha256 "d660305c5a0ffd768b756dc56998f08d9d096f83b83cbdccda56eb77b6cdc1c4"
-      def install
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.4/ps9s_0.1.4_linux_amd64.tar.gz"
+      sha256 "8fe5f2659fd414fd3e05983f9a6009f7264fce995b8ff4ea927fa802ef49a632"
+      define_method(:install) do
         bin.install "ps9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caseycs/ps9s/releases/download/v0.1.3/ps9s_0.1.3_linux_arm64.tar.gz"
-      sha256 "5cad16d18f351bf218f22cac1c245abf8afcfa90dff234928d1722bf66a429ff"
-      def install
+      url "https://github.com/caseycs/ps9s/releases/download/v0.1.4/ps9s_0.1.4_linux_arm64.tar.gz"
+      sha256 "dc65332d09ec9c5f28fcec06d6e044cf0f43d1f308baa4438e8ca372b2e3d45e"
+      define_method(:install) do
         bin.install "ps9s"
       end
     end
